@@ -13,11 +13,14 @@
     <h1 style = "text-align:center; color:steelblue"><bold>Sunburst Diagram for Mapping of the Brain </bold></h1>
     <!-- Your D3.js code for making a Bar Graph -->
     <script type="text/javascript" src="sunburst.js"></script>
-    <!-- Buttons that will create an effect on our diagram --> 
-      <label><input type="checkbox" name="checkboxI" value="value">Neurotransmitters</label>
-      <label><input type="checkbox" name="checkboxII" value="value">DiseaseI</label>
-      <label><input type="checkbox" name="checkboxIII" value="value">DiseaseII</label>
-      <label><input type="checkbox" name="checkboxIV" value="value">DiseaseIII</label>
+    <!-- Buttons that will create an effect on our diagram -->
+      <div>
+        <label><input type="checkbox" name="checkboxI" value="value">Neurotransmitters</label>
+        <label><input type="checkbox" name="checkboxII" value="value">DiseaseI</label>
+        <label><input type="checkbox" name="checkboxIII" value="value">DiseaseII</label>
+        <label><input type="checkbox" name="checkboxIV" value="value">DiseaseIII</label>
+      </div>
+
     <!-- Submission Info -->
     <h4>Created by John Collins, Jose Lopez, Scott McLean, Vincent Steffens</h4>
   
@@ -31,21 +34,10 @@
             alert ("The checkBox is " + isChecked);
         }
     </script>
-
-
-    
-   <label>x <input type="checkBox" id="myInput" onclick="GetCheckedState ();"/> <head>
-    <script type="text/javascript">
-        function GetCheckedState () {
-            var input = document.getElementById ("myInput");
-            var isChecked = input.checked;
-            isChecked = (isChecked)? "checked" : "not checked";
-            alert ("The checkBox is " + isChecked);
-        }
-    </script>
-</head>
-<body>
-      <label><input type="checkBox" id="myInput" onclick="GetCheckedState ();">Sample Listener</label>
+      
+      <div>
+        <label><input type="checkBox" id="myInput" onclick="GetCheckedState ();">Sample Listener</label>
+      </div>
 </body>
 
    
@@ -62,6 +54,7 @@
     <h4> Sources: </h4>
     <ul>
         <li>Sunburst Partition: <a href="url">http://bl.ocks.org/mbostock/4063423</a></li>
+        <li>Example of Event Listener:  <a href="url"></a></li>
     </ul>  
       
       
